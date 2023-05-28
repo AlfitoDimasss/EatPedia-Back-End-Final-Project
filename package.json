@@ -21,6 +21,9 @@
   "nodemonConfig": {
     "ignore": [
       "./src/data/articles.json"
+    ],
+    "watch": [
+      "./src/views/index.html"
     ]
   }
 }

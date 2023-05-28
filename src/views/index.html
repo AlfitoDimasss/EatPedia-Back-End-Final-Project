@@ -5,11 +5,141 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <link rel="stylesheet" href="./assets/responsive.css">
+
+  <title>EatPedia - Article API Documentation</title>
 </head>
 
 <body>
-  <h1>Halo World Heisenberg White</h1>
+  <main>
+    <div class="wrapper">
+      <nav class="nav-bar">
+        <ul>
+          <li class="nav-bar__brand"><a href="#">Dicoding - Article API</a></li>
+          <li class="nav-bar__link"><a href="#">Base URL</a></li>
+          <li>Endpoints</li>
+          <li class="nav-bar__link__inner"><a href="">Get All Article</a></li>
+          <li class="nav-bar__link__inner"><a href="">Add Article</a></li>
+          <li class="nav-bar__link__inner"><a href="">Edit Article</a></li>
+          <li class="nav-bar__link__inner"><a href="">Delete Article</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1 class="content__header">EatPedia - Article API</h1>
+        <div class="base-url-wrapper">
+          <h3>Base URL</h3>
+          <p class="base-url-wrapper__link"><a href="">https://localhost:8080</a></p>
+        </div>
+        <div class="endpoints">
+          <h3>Endpoints</h3>
+          <div class="endpoint">
+            <h5>Get All Article</h5>
+            <p class="endpoint__desc">Mendapatkan semua artikel</p>
+            <ul class="endpoint__detail">
+              <li>URL: <span>/articles</span></li>
+              <li>Method: <span>GET</span></li>
+              <li>Response:</li>
+            </ul>
+            <div class="endpoint__response">
+              <p class="endpoint__response__first-indent">{</p>
+              <p class="endpoint__response__second-indent">"status": success</p>
+              <p class="endpoint__response__second-indent">"total": 5</p>
+              <p class="endpoint__response__second-indent">"articles": [</p>
+              <p class="endpoint__response__third-indent">{</p>
+              <div class="endpoint__response__fourth-indent">
+                <p>"id": "rqdv5juczeskfw1e",</p>
+                <p>"title": "Viral, Restoran Malaysia Buat Ramen Durian 'Se-Kulit-kulitnya'",</p>
+                <p>"image": "https://akcdn.detik.net.id/visual/2023/05/22/durian-ramen_169.png?w=650&q=90",</p>
+                <p>"link":
+                  "https://www.cnnindonesia.com/gaya-hidup/20230522113450-262-952346/viral-restoran-malaysia-buat-ramen-durian-se-kulit-kulitnya",
+                </p>
+                <p>"description": "Ramen pada umumnya disajikan dalam mangkuk. Namun, restoran Jepang di Malaysia
+                  menyajikan ramen dalam durian utuh lengkap dengan daging buah tersebut.",</p>
+                <p>"channel": "cnn",</p>
+                <p>"insertedAt": "2023-05-25T14:17:39.835Z",</p>
+                <p>"updatedAt": "2023-05-25T14:17:39.835Z"</p>
+              </div>
+              <p class="endpoint__response__third-indent">},</p>
+              <p class="endpoint__response__third-indent">{</p>
+              <div class="endpoint__response__fourth-indent">
+                <p>"id": "rqdv5juczeskfw1e",</p>
+                <p>"title": "Viral, Restoran Malaysia Buat Ramen Durian 'Se-Kulit-kulitnya'",</p>
+                <p>"image": "https://akcdn.detik.net.id/visual/2023/05/22/durian-ramen_169.png?w=650&q=90",</p>
+                <p>"link":
+                  "https://www.cnnindonesia.com/gaya-hidup/20230522113450-262-952346/viral-restoran-malaysia-buat-ramen-durian-se-kulit-kulitnya",
+                </p>
+                <p>"description": "Ramen pada umumnya disajikan dalam mangkuk. Namun, restoran Jepang di Malaysia
+                  menyajikan ramen dalam durian utuh lengkap dengan daging buah tersebut.",</p>
+                <p>"channel": "cnn",</p>
+                <p>"insertedAt": "2023-05-25T14:17:39.835Z",</p>
+                <p>"updatedAt": "2023-05-25T14:17:39.835Z"</p>
+              </div>
+              <p class="endpoint__response__third-indent">},</p>
+              <p class="endpoint__response__third-indent">...</p>
+              <p class="endpoint__response__second-indent">]</p>
+              <p class="endpoint__response__first-indent">}</p>
+            </div>
+          </div>
+          <div class="endpoint">
+            <h5>Add Article</h5>
+            <p class="endpoint__desc">Menambahkan artikel</p>
+            <ul class="endpoint__detail">
+              <li>URL: <span>/articles</span></li>
+              <li>Method: <span>POST</span></li>
+              <li>Response:</li>
+            </ul>
+            <div class="endpoint__response">
+              <p class="endpoint__response__first-indent">{</p>
+              <p class="endpoint__response__second-indent">"status": success</p>
+              <p class="endpoint__response__second-indent">"message": Artikel berhasil ditambahkan</p>
+              <p class="endpoint__response__second-indent">"data": {</p>
+              <div class="endpoint__response__third-indent">
+                <p>"id": "rqdv5juczeskfw1e",</p>
+              </div>
+              <p class="endpoint__response__second-indent">}</p>
+              <p class="endpoint__response__first-indent">}</p>
+            </div>
+          </div>
+          <div class="endpoint">
+            <h5>Edit Article</h5>
+            <p class="endpoint__desc">Memperbarui detail artikel</p>
+            <ul class="endpoint__detail">
+              <li>URL: <span>/articles/{id}</span></li>
+              <li>Method: <span>PUT</span></li>
+              <li>Response:</li>
+            </ul>
+            <div class="endpoint__response">
+              <p class="endpoint__response__first-indent">{</p>
+              <p class="endpoint__response__second-indent">"status": success</p>
+              <p class="endpoint__response__second-indent">"message": Artikel berhasil diperbarui</p>
+              <p class="endpoint__response__first-indent">}</p>
+            </div>
+          </div>
+          <div class="endpoint">
+            <h5>Delete Article</h5>
+            <p class="endpoint__desc">Menghapus artikel</p>
+            <ul class="endpoint__detail">
+              <li>URL: <span>/articles/{id}</span></li>
+              <li>Method: <span>DELETE</span></li>
+              <li>Response:</li>
+            </ul>
+            <div class="endpoint__response">
+              <p class="endpoint__response__first-indent">{</p>
+              <p class="endpoint__response__second-indent">"status": success</p>
+              <p class="endpoint__response__second-indent">"message": Artikel berhasil dihapus</p>
+              <p class="endpoint__response__first-indent">}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright EatPedia 2023. All RIghts Reserved</p>
+  </footer>
+
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>
