@@ -234,24 +234,24 @@
     <div class="wrapper">
       <nav class="nav-bar">
         <ul>
-          <li class="nav-bar__brand"><a href="#">Dicoding - Article API</a></li>
-          <li class="nav-bar__link"><a href="#">Base URL</a></li>
+          <li class="nav-bar__brand"><a href="#title">Dicoding - Article API</a></li>
+          <li class="nav-bar__link"><a href="#baseUrl">Base URL</a></li>
           <li>Endpoints</li>
-          <li class="nav-bar__link__inner"><a href="">Get All Article</a></li>
-          <li class="nav-bar__link__inner"><a href="">Add Article</a></li>
-          <li class="nav-bar__link__inner"><a href="">Edit Article</a></li>
-          <li class="nav-bar__link__inner"><a href="">Delete Article</a></li>
+          <li class="nav-bar__link__inner"><a href="#getArticle">Get All Article</a></li>
+          <li class="nav-bar__link__inner"><a href="#addArticle">Add Article</a></li>
+          <li class="nav-bar__link__inner"><a href="#editArticle">Edit Article</a></li>
+          <li class="nav-bar__link__inner"><a href="#deleteArticle">Delete Article</a></li>
         </ul>
       </nav>
       <div class="content">
-        <h1 class="content__header">EatPedia - Article API</h1>
-        <div class="base-url-wrapper">
+        <h1 class="content__header" id="title">EatPedia - Article API</h1>
+        <div class="base-url-wrapper" id="base-url">
           <h3>Base URL</h3>
-          <p class="base-url-wrapper__link"><a href="">https://localhost:8080</a></p>
+          <p class="base-url-wrapper__link"><a href="">https://eatpedia-article-api.up.railway.app</a></p>
         </div>
         <div class="endpoints">
           <h3>Endpoints</h3>
-          <div class="endpoint">
+          <div class="endpoint" id="getArticle">
             <h5>Get All Article</h5>
             <p class="endpoint__desc">Mendapatkan semua artikel</p>
             <ul class="endpoint__detail">
@@ -299,7 +299,7 @@
               <p class="endpoint__response__first-indent">}</p>
             </div>
           </div>
-          <div class="endpoint">
+          <div class="endpoint" id="addArticle">
             <h5>Add Article</h5>
             <p class="endpoint__desc">Menambahkan artikel</p>
             <ul class="endpoint__detail">
@@ -319,7 +319,7 @@
               <p class="endpoint__response__first-indent">}</p>
             </div>
           </div>
-          <div class="endpoint">
+          <div class="endpoint" id="editArticle">
             <h5>Edit Article</h5>
             <p class="endpoint__desc">Memperbarui detail artikel</p>
             <ul class="endpoint__detail">
@@ -334,7 +334,7 @@
               <p class="endpoint__response__first-indent">}</p>
             </div>
           </div>
-          <div class="endpoint">
+          <div class="endpoint" id="deleteArticle">
             <h5>Delete Article</h5>
             <p class="endpoint__desc">Menghapus artikel</p>
             <ul class="endpoint__detail">
